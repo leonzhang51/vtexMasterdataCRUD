@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "my_schema",
+  "type": "object",
+  "properties": {
+    "string_field_example": {
+      "type": "string"
+    },
+    "number_field_example": {
+      "type": "number"
+    },
+    "boolean_field_example": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "number_field_example",
+    "string_field_example"
+  ],
+  "v-default-fields": [
+    "number_field_example",
+    "string_field_example"
+  ]
+}

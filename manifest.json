@@ -1,0 +1,28 @@
+{
+  "name": "service-worker-example",
+  "vendor": "uscertification09rona",
+  "version": "1.0.0",
+  "title": "Service App Example",
+  "description": "Reference app for VTEX IO apps that enable service-worker builder",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "docs": "0.x",
+    "service-worker": "0.x",
+    "masterdata": "1.x"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "uscertification09rona.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
